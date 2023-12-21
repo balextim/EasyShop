@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RealizarCompra">
+
+    <TextView
+        android:id="@+id/nombreEstablecimientoFactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="5dp"
+        android:hint="Establecmiento"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/txtRealizarCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="5dp"
+        android:text="Lista de productos a comprar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFactura"
+        android:layout_width="match_parent"
+        android:layout_height="291dp"
+        android:layout_marginTop="16dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:listitem="@layout/producto_factura_card" />
+
+    <TextView
+        android:id="@+id/totalApagarFactura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Total a pagar:"
+        android:paddingRight="20dp"
+        android:textAlignment="viewEnd"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/volverACarritoCompra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="5dp"
+            android:text="Volver"/>
+
+        <Button
+            android:id="@+id/compartir"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="5dp"
+            android:text="Compartir" />
+
+        <Button
+            android:id="@+id/descargarPdf"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="5dp"
+            android:text="Descargar"/>
+
+        <com.paypal.checkout.paymentbutton.PaymentButtonContainer
+            android:id="@+id/payment_button_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="100dp"
+            app:paypal_button_color="blue"
+            app:paypal_button_enabled="true"
+            app:paypal_button_label="pay"
+            app:paypal_button_shape="rounded"
+            app:paypal_button_size="medium" />
+
+    </LinearLayout>
+</LinearLayout>

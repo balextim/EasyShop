@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InicioSesion">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/ic_user"
+        />
+
+    <EditText
+        android:id="@+id/txtUserIni"
+        android:layout_width="216dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="95dp"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtContrIni"
+        android:layout_width="215dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="95dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnIniIni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="40dp"
+            android:text="Iniciar"/>
+
+        <Button
+            android:id="@+id/btnRegIni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="40dp"
+            android:text="Registrarse"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/logoProductoInfo"
+        android:layout_width="142dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_information" />
+
+    <TextView
+        android:id="@+id/nombreProductoInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:hint="Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/logoProductoInfo"
+        app:layout_constraintTop_toTopOf="@+id/logoProductoInfo" />
+
+    <TextView
+        android:id="@+id/precioProductoInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Precio"
+        app:layout_constraintStart_toEndOf="@+id/logoProductoInfo"
+        app:layout_constraintTop_toBottomOf="@+id/nombreProductoInfo" />
+
+    <TextView
+        android:id="@+id/precioCantidadInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:hint="Precio"
+        app:layout_constraintStart_toEndOf="@+id/precioProductoInfo"
+        app:layout_constraintTop_toTopOf="@+id/precioProductoInfo" />
+
+    <TextView
+        android:id="@+id/marcaProductoInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Marca:"
+        app:layout_constraintStart_toStartOf="@+id/logoProductoInfo"
+        app:layout_constraintTop_toBottomOf="@+id/logoProductoInfo" />
+
+    <TextView
+        android:id="@+id/tipoProductoInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Tipo:"
+        app:layout_constraintStart_toStartOf="@+id/marcaProductoInfo"
+        app:layout_constraintTop_toBottomOf="@+id/marcaProductoInfo" />
+
+    <TextView
+        android:id="@+id/pesoProductoInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Peso:"
+        app:layout_constraintStart_toStartOf="@+id/tipoProductoInfo"
+        app:layout_constraintTop_toBottomOf="@+id/tipoProductoInfo" />
+
+    <TextView
+        android:id="@+id/descripcionProductoInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Descripción:"
+        app:layout_constraintStart_toStartOf="@+id/pesoProductoInfo"
+        app:layout_constraintTop_toBottomOf="@+id/pesoProductoInfo" />
+
+    <TextView
+        android:id="@+id/contenidoMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:hint="Marca"
+        app:layout_constraintStart_toEndOf="@+id/marcaProductoInfo"
+        app:layout_constraintTop_toTopOf="@+id/marcaProductoInfo" />
+
+    <TextView
+        android:id="@+id/contenidoTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tipo"
+        app:layout_constraintStart_toStartOf="@+id/contenidoMarca"
+        app:layout_constraintTop_toTopOf="@+id/tipoProductoInfo" />
+
+    <TextView
+        android:id="@+id/contenidoPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Peso"
+        app:layout_constraintStart_toStartOf="@+id/contenidoTipo"
+        app:layout_constraintTop_toTopOf="@+id/pesoProductoInfo" />
+
+    <TextView
+        android:id="@+id/contenidoDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        app:layout_constraintStart_toStartOf="@+id/contenidoPeso"
+        app:layout_constraintTop_toTopOf="@+id/descripcionProductoInfo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
